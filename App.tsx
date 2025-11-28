@@ -410,6 +410,7 @@ const App: React.FC = () => {
             gameState={gameState} 
             language={language} 
             onBuyJoker={buyJoker} 
+            onSellJoker={sellJoker}
             onReroll={rerollShop} 
             onNextRound={nextRound} 
           />
