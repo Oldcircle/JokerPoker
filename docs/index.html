@@ -11,7 +11,7 @@
       :root {
         --bg-color: #333;
       }
-
+      
       body {
         font-family: 'VT323', monospace;
         background-color: #1a1a1a;
@@ -19,8 +19,9 @@
         margin: 0;
         color: white;
       }
-
+      
       /* CRT Scanline & Flicker */
+      
       .crt::before {
         content: " ";
         display: block;
@@ -38,7 +39,7 @@
         z-index: 50;
         pointer-events: none;
       }
-
+      
       .crt::after {
         content: " ";
         display: block;
@@ -53,7 +54,7 @@
         pointer-events: none;
         animation: flicker 0.15s infinite;
       }
-
+      
       @keyframes flicker {
         0% { opacity: 0.027; }
         5% { opacity: 0.04; }
@@ -61,8 +62,9 @@
         15% { opacity: 0.04; }
         100% { opacity: 0.027; }
       }
-
+      
       /* Vortex Background */
+      
       .bg-vortex {
         position: fixed;
         top: -50%;
@@ -87,16 +89,17 @@
         background: radial-gradient(circle at center, transparent 0%, #000 90%);
         z-index: -1;
       }
-
+      
       @keyframes rotate {
         100% { transform: rotate(360deg); }
       }
-
+      
       /* Card Shake */
+      
       .card-shake:hover {
         animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
       }
-
+      
       @keyframes shake {
         10%, 90% { transform: translate3d(-1px, 0, 0); }
         20%, 80% { transform: translate3d(2px, 0, 0); }
@@ -107,24 +110,25 @@
       .text-shadow-retro {
         text-shadow: 2px 2px 0px rgba(0,0,0,0.8);
       }
-
+      
       .text-shadow-fire {
         text-shadow: 
           0 0 4px #ff0000,
           0 0 8px #ff4500,
           2px 2px 0px #000;
       }
-
+      
       .shadow-pixel {
         box-shadow: 4px 4px 0px rgba(0,0,0,0.5);
       }
       
       /* Scrollbar hidden */
+      
       ::-webkit-scrollbar {
         display: none;
       }
     </style>
-    <script type="module" src="/index.tsx"></script>
+  <script type="module" crossorigin src="/JokerPoker/assets/index-CsHp2mrW.js"></script>
 </head>
   <body>
     <div id="root"></div>
